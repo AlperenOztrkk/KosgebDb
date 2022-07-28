@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserRoles  extends Roles{
- private int id;
+ private int userRoleId;
  private int userId;
  private List<Integer> roleId=new ArrayList<>();
 public UserRoles() {
@@ -12,7 +12,7 @@ public UserRoles() {
 }
 public UserRoles(int id, int userId,int... roleIds) {
 	super();
-	this.id = id;
+	this.userRoleId = id;
 	this.userId = userId;
 	for(int roleId :roleIds) {
 		this.roleId.add(roleId);
@@ -20,10 +20,10 @@ public UserRoles(int id, int userId,int... roleIds) {
 	
 }
 public int getId() {
-	return id;
+	return userRoleId;
 }
 public void setId(int id) {
-	this.id = id;
+	this.userRoleId = id;
 }
 public int getUserId() {
 	return userId;
