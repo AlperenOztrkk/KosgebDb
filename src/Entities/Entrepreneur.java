@@ -1,7 +1,7 @@
 package Entities;
 
 public class Entrepreneur extends Applicant {
- private int entrepreneurId;
+ private int id;
  private String firtName;
  private String lastName;
 public Entrepreneur() {
@@ -10,15 +10,15 @@ public Entrepreneur() {
 }
 public Entrepreneur(int id, String firtName, String lastName) {
 	super();
-	this.entrepreneurId = id;
+	this.id = id;
 	this.firtName = firtName;
 	this.lastName = lastName;
 }
 public int getId() {
-	return entrepreneurId;
+	return id;
 }
 public void setId(int id) {
-	this.entrepreneurId = id;
+	this.id = id;
 }
 public String getFirtName() {
 	return firtName;

@@ -1,7 +1,7 @@
 package Entities;
 
 public class Applicant extends User {
- private int applicantId;
+ private int id;
  private int userId;
  
  
@@ -10,16 +10,16 @@ public Applicant() {
 	// TODO Auto-generated constructor stub
 }
 public Applicant(Applicant applicant) {
-	this.applicantId=applicant.getId();
+	this.id=applicant.getId();
 	this.userId=applicant.getId();
 	
 }
 
 public int getId() {
-	return applicantId;
+	return id;
 }
 public void setId(int id) {
-	this.applicantId = id;
+	this.id = id;
 }
 public int getUserId() {
 	return userId;

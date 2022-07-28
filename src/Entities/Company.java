@@ -1,7 +1,7 @@
 package Entities;
 
 public class Company  extends Applicant{
-  private int companyId;
+  private int id;
   private int applicantId;
   private String title;
 public Company() {
@@ -10,12 +10,12 @@ public Company() {
 }
 public Company(int id, int applicantId, String title) {
 	super();
-	this.companyId = id;
+	this.id = id;
 	this.applicantId = applicantId;
 	this.title = title;
 }
 public int getId() {
-	return companyId;
+	return id;
 }
 public void setId(int id) {
 	this.applicantId = id;

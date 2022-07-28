@@ -1,7 +1,7 @@
 package Entities;
 
 public class Employee extends User {
-private int employeeId;
+private int id;
 private String name;
 private String centerId;
 private String registrationNumber;
@@ -15,16 +15,16 @@ public Employee(int id, String password, String userName) {
 }
 public Employee(int id, String name, String centerId, String registrationNumber) {
 	super();
-	this.employeeId = id;
+	this.id = id;
 	this.name = name;
 	this.centerId = centerId;
 	this.registrationNumber = registrationNumber;
 }
 public int getId() {
-	return employeeId;
+	return id;
 }
 public void setId(int id) {
-	this.employeeId = id;
+	this.id = id;
 }
 public String getName() {
 	return name;
